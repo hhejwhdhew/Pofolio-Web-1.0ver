@@ -1,0 +1,191 @@
+/* 全局样式 */
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 导航栏样式 */
+nav {
+  background: #00916E;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-right:20px;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FEEFE5;
+}
+
+.nav-link:hover {
+  color: #FFCF00;
+}
+
+/* 欢迎部分样式 */
+.about {
+  background: #FEEFE5;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #00916E;
+  margin-top: 65px;
+}
+
+.about h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+/* 项目部分样式 */
+.project-container {
+  background: #14080E;
+  padding: 40px 20px;
+  color: #00916E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container h1 {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.project-c {
+  margin: 20px;
+  text-align: center;
+}
+
+.project-c img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid white;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #FEEFE5;
+}
+
+.project-link:hover {
+  color: #FFCF00;
+}
+
+.project-container button {
+  background: #00916E;
+  color: #FEEFE5;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-container button:hover {
+  background: #006F57;
+}
+
+/* 联系部分样式 */
+.contact {
+  background: #FEEFE5;
+  color: #00916E;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact li {
+  margin: 0 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #00916E;
+}
+
+.contact a:hover {
+  color: #FFCF00;
+}
+
+/* 响应式布局 */
+@media (max-width: 720px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .about {
+    height: auto;
+    padding: 20px;
+  }
+
+  .about h1 {
+    font-size: 40px;
+  }
+
+  .project-container {
+    padding: 20px;
+  }
+
+  .project-c img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .project-container button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .contact h1, .contact h3 {
+    font-size: 20px;
+  }
+
+  .contact ul {
+    flex-direction: column;
+  }
+
+  .contact li {
+    margin: 10px 0;
+  }
+}
